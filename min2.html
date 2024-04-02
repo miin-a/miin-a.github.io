@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Inconsolata:wght@300;500&family=Indie+Flower&family=Kanit:wght@200&family=Mukta&family=Oxygen&family=Raleway&family=Smooch+Sans:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Inconsolata:wght@300;500&family=Indie+Flower&family=Kanit:wght@200&family=Mukta&family=Oxygen&family=Smooch+Sans:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Inconsolata:wght@300&family=Indie+Flower&family=Kanit:wght@200&family=Oxygen&family=Smooch+Sans:wght@200&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+<style>
+body {
+  font-family: sans-serif, times;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #FFC0CB;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Kanit', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #E75480;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: beige;
+  margin: 0px 0 70px 0;
+  font-family: 'Raleway', sans-serif;
+  
+}
+p {
+  color: rgba(231,84,128);
+  background: black;
+  background: linear-gradient(bottom, rgba(255,248,231,.2), rgba(255,248,231,.4));
+  background: -webkit-linear-gradient(bottom, rgba(255,248,231,.2), rgba(255,248,231,.4));
+  background: -moz-linear-gradient(bottom, rgba(255,248,231,.2), rgba(255,248,231,.4));
+  padding: 0.5px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+      font-family: 'Inconsolata', monospace; 
+}
+
+small {
+  opacity: 0;
+
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 10;
+  font-family: 'Mukta', sans-serif;
+}
+
+.first{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx4AkKj7PpEmhDosgKAsOU62IzyCsgOFakOQ&usqp=CAU");
+}
+.second{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwu447nOJNVawjuNr162nOAy0gOKYUSfbRqv0JCKg_YWA6VSB3xPOQW2Pf1gQ4-05pyU&usqp=CAU");
+}
+.dessert{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz6Bxd7DTne38KFv1jwYwsn-yOC3pbDY0cHg&usqp=CAU");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Inconsolata', monospace; 
+  }
+  small {
+    font-size: 16px;
+    font-family: 'Smooch Sans', sans-serif;
+  }
+}
+input {
+	font-size: 22px;
+}
+</style>
+
+</head>
+
+<body>
+<h1>min's bakery</h1>
+<h2>nyc sweets shop</h2>
+<div class="first">
+  <input type="number" min="0" style="width: 50px" class="quantities">
+  <p>strawberry shortcake <span class="price">$22</span><br />
+  <small> "a slice of Angel Food Cake over pound cake is its airy, springy texture, which is more thematically aligned with freshly whipped cream and macerated strawberry juice than almost anything else that's sweet and edible." </small></p>
+</div>
+
+<div class="second">
+  <input type="number" min="0" style="width: 50px" class="quantities">
+  <p>tiramisu <span class="price">$20</span><br />
+  <small> "an elegant and rich layered Italian dessert made with delicate ladyfinger cookies, espresso or instant espresso, mascarpone cheese, eggs, sugar, Marsala wine, rum and cocoa powder."</small></p>
+</div>
+  
+<div class="dessert">
+  <input type="number" min="0" style="width: 50px" class="quantities">
+  <p>cheese cake <span class="price">$18</span><br />
+  <small> "a dessert consisting of a thick, creamy filling of cheese, eggs, and sugar over a thinner crust and topped with sweet or sometimes salty items."</small></p>
+</div>
+<br><br>
+<input id="Name" placeholder="Your name">
+<input id="Email" placeholder="Your email">
+<input id="submit" type="submit">
+<br><br>
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+ import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyATh--oQWVq5Pdiz0jON5s_DeDhL_HSedU",
+    authDomain: "project-3-33d36.firebaseapp.com",
+    projectId: "project-3-33d36",
+    storageBucket: "project-3-33d36.appspot.com",
+    messagingSenderId: "671496768060",
+    appId: "1:671496768060:web:31d9e1b999388f93301139",
+    measurementId: "G-P7TYR1Q6MN"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+
+const Name = document.querySelector("#Name") 
+const Email = document.querySelector("#Email")
+document.querySelector('#submit').addEventListener('click', Submit)
+const quantities = document.querySelectorAll(".quantities")
+const itemsList = ["strawberry shortcake", "tiramisu", "cheese cake"]
+const prices = document.querySelectorAll(".price") 
+
+
+function Submit() {
+  const timestamp = buildTimestamp()
+  let total = 0
+  let cart = { }
+  for  (let i=0; i<quantities.length; i=i+1) {
+  	if (quantities[i].value != "0" && quantities[i].value != "") {
+		let price = prices[i].innerHTML.replace('$', '')
+					  total = total + quantities[i].value * price 
+  		cart[itemsList[i]] = parseInt(quantities[i].value) 
+  	}
+  	quantities[i].value = ""
+  }
+  
+
+  set(ref(db, timestamp), {
+	  Name: Name.value,
+      email: Email.value,
+	  cart: cart,
+	  totalPrice: total,
+	  paid: "not yet",
+  });
+
+  Name.value = ""
+  Email.value = ""
+}
+
+function buildTimestamp() {
+	  const now = new Date();
+	  let timestamp = now.getFullYear().toString() + "/";
+	  //const month = now.toLocaleString('default', { month: 'long' });
+
+	  let month = now.getMonth()+1   //add 1 because Javascript uses 0 for January
+	  month = month.toString()
+	  month = addLeadingZero(month)
+	  timestamp += month + "/"; 
+
+	  let date = now.getDate().toString()
+	  date = addLeadingZero(date)
+	  timestamp += date + "/";
+
+	  let hours = now.getHours().toString()
+	  hours = addLeadingZero(hours)
+	  timestamp += hours + ":";
+
+	  let minutes = now.getMinutes().toString()
+	  minutes = addLeadingZero(minutes)
+	  timestamp += minutes + ":";
+
+	  let seconds = now.getSeconds().toString()
+	  seconds = addLeadingZero(seconds)
+	  timestamp += seconds;
+
+	  return timestamp
+	}
+
+	function addLeadingZero(units) {
+		if (units.length < 2) {
+			units = "0" + units
+		}
+		return units
+	}
+
+</script>
+</body>
